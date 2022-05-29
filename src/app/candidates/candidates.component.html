@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-candidate-list (candidateWasSelected)="selectedCandidate = $event"></app-candidate-list>
+    </div>
+    <div class="col-md-7">
+        <app-candidate-detail *ngIf="selectedCandidate; else infoText"
+        [candidate]="selectedCandidate"></app-candidate-detail>
+        <ng-template #infoText>
+            <p>Please select a Candidate!</p>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+
+
+<div class="card mt-4" style="width: 18rem;">
+    <img 
+            [src]="candidate.imagePath" 
+            alt="{{ candidate.lastname }}" 
+            class="card-img-top img-responsive">
+    <div class="card-body">
+      <h3 class="card-title">{{ candidate.firstname }} {{ candidate.lastname }}</h3>
+
+
+
+      <p class="card-text">Awesome Candidate Detail about {{ candidate.firstname }} {{ candidate.lastname }}</p>
+
+
+
+      <div class="btn-group">
+        <button 
+        type="button" 
+        class="btn btn-primary dropdown-toggle">
+            Manage Candidate 
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Add to Job/Interview List</a></li>
+            <li><a href="#">Edit Candidate</a></li>
+            <li><a href="#">Delete Candidate</a></li>
+        </ul>
+    </div>
+    </div>
+  </div>

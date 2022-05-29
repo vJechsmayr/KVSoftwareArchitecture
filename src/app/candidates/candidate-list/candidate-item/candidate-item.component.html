@@ -1,0 +1,15 @@
+<div class="card mb-2">
+    <a 
+        href="#" 
+        class="list-group-item clearfix"
+        (click)="onSelected()">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading alert-info p-2">{{ candidate.lastname}}</h4>
+            <p class="lsit-group-item-text">{{ candidate.firstname }} {{ candidate.lastname}}</p>
+        </div>
+        <span class="pull-right">
+            <img [src]="candidate.imagePath" alt="{{ candidate.lastname }}" title="{{ candidate.lastname }}" class="img-responsive" style="max-height: 100px;">
+        </span>
+    </a>
+
+</div>

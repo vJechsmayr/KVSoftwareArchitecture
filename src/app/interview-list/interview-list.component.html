@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-interview-list-edit></app-interview-list-edit>
+        <hr>
+        <ul class="list-group">
+            <a 
+                class="list-group-item" 
+                style="cursor:pointer"
+                *ngFor="let interview of interviews">
+            {{ interview.name }} ({{ interview.date }} at {{ interview.place }})
+            </a>
+        </ul>
+    </div>
+</div>
